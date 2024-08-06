@@ -1,0 +1,35 @@
+@import "../../public.scss";
+
+.review {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  .top {
+    p {
+      line-height: 1.6rem;
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img {
+      border-radius: 50%;
+      width: 50px;
+    }
+    .txt {
+      display: flex;
+      flex-direction: column;
+      span.auther {
+        font-weight: bold;
+        color: var(--headings-black);
+      }
+      span.place {
+        color: var(--texts-black);
+      }
+    }
+  }
+}

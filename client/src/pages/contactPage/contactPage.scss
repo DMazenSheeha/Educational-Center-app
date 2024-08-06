@@ -1,0 +1,50 @@
+@import "../../public.scss";
+
+.contactPage {
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  .contactForm {
+    width: 900px;
+    background-color: #fff;
+    margin: 50px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include md {
+      width: 600px;
+    }
+    @include sm {
+      width: 300px;
+    }
+    .input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      input {
+        width: 100%;
+        border: 1px solid #999;
+        padding: 7px 15px;
+      }
+    }
+    button {
+      align-self: center;
+      background-color: #0087e1;
+      padding: 7px 100px;
+      width: fit-content;
+      border: none;
+      border-radius: 50px;
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        background-color: #0093f6;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@mixin lg {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: 920px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 770px) {
+    @content;
+  }
+}
+
+:root {
+  --light-blue: #0274be;
+  --dark-blue: #0d68ae;
+  --headings-black: #2f3f50;
+  --texts-black: #3a3a3a;
+  --white: #fafafa;
+}

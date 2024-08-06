@@ -1,0 +1,46 @@
+@import "../../../public.scss";
+
+.features {
+  z-index: 10000;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  top: -120px;
+  @include sm {
+    top: 0;
+  }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 20px;
+  .feature {
+    max-width: 350px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    i {
+      font-size: 3.5rem;
+      color: var(--dark-blue);
+    }
+    .text {
+      text-wrap: wrap;
+      padding: 0 50px;
+      h2 {
+        color: var(--headings-black);
+        margin-bottom: 20px;
+      }
+      p {
+        color: var(--texts-black);
+      }
+    }
+  }
+}

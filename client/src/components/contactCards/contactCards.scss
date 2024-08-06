@@ -1,0 +1,40 @@
+@import "../../public.scss";
+
+.contactCards {
+  padding: 0 20px;
+  margin: 150px 0 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  .contactCard {
+    background-color: #fff;
+    min-width: 200px;
+    width: 270px;
+    height: 200px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      padding: 10px;
+      border-radius: 50%;
+      color: var(--light-blue);
+      border: 3px solid var(--light-blue);
+      margin-bottom: 20px;
+    }
+    h4 {
+      font-weight: bold;
+    }
+  }
+  .contactForm {
+    margin-bottom: 100px auto;
+  }
+}

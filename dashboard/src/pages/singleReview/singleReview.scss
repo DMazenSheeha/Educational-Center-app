@@ -1,0 +1,17 @@
+.reviewDetails {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  background-color: #fff;
+  p {
+    padding: 20px;
+    width: 100%;
+    text-align: start;
+    background-color: #cccccc;
+    span {
+      margin-right: 20px;
+      font-weight: bold;
+    }
+  }
+}

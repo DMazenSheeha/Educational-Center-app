@@ -1,0 +1,91 @@
+@import "../../public.scss";
+.loginAndRegisterForm {
+  background-color: #fff;
+  position: absolute;
+  top: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1024px;
+  border-radius: 5px;
+  min-height: 600px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  @include lg {
+    width: 800px;
+  }
+  @include md {
+    width: 700px;
+  }
+  @include sm {
+    width: 100%;
+  }
+  .close {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--light-blue);
+    margin-bottom: 50px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    .input {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: relative;
+      label {
+        font-weight: bold;
+        text-align: center;
+      }
+      input {
+        border: 2px solid #e2e7ed;
+        padding: 5px 30px;
+        background-color: #f0f3f6;
+      }
+      i {
+        position: absolute;
+        top: 40px;
+        left: 10px;
+      }
+    }
+    button {
+      border: none;
+      width: 200px;
+      color: #fff;
+      padding: 7px;
+      outline: none;
+      border-radius: 50px;
+      background-color: var(--light-blue);
+    }
+  }
+  span.register {
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 30px 0;
+  }
+  img {
+    width: 150px;
+    filter: brightness(0.4) saturate(100%) invert(0%) sepia(0%) hue-rotate(0deg);
+  }
+}

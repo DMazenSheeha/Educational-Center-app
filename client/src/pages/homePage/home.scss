@@ -1,0 +1,8 @@
+@import "../../public.scss";
+
+.home {
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+}

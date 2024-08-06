@@ -1,0 +1,53 @@
+@import "../../public.scss";
+
+.login-logout-btn {
+  width: fit-content;
+  width: 400px;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #fff;
+  background-color: #0082d8;
+  display: flex;
+  text-align: start;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: 0.2s;
+  @include sm {
+    width: 250px;
+  }
+  &:hover {
+    background-color: #038ce7;
+  }
+}
+
+.profile {
+  background-color: var(--white);
+  .loginOrRegister {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+    @include sm {
+      padding-left: 0;
+      justify-content: center;
+    }
+    background-color: #fff;
+    position: relative;
+  }
+  .profileInfo {
+    min-height: 250px;
+    align-items: center;
+    padding-left: 20%;
+    display: flex;
+    @include sm {
+      padding-left: 0;
+      justify-content: center;
+    }
+    height: fit-content;
+  }
+}
